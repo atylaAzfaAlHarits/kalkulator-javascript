@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator JavaScript | Style with TailwindCSS</title>
+    <link rel="shortcut icon" href="https://flowbite.com/images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <section id="calculator">
+        <div class="flex justify-center pt-10 lg:pt-16">
+            <div
+                class="w-full lg:w-1/4 mx-4 mb-9 rounded-md bg-glassmorphism-0 shadow-md backdrop-blur-md border border-white-87 py-3 px-3">
+                <div class="flex justify-center">
+                    <div id="result"
+                        class="font-Inter text-3xl bg-white w-full text-right px-3 py-1 rounded-md font-medium">0</div>
+                </div>
+                <div class="mt-6 flex gap-2 justify-center grid grid-cols-4">
+                    <button
+                        class="bg-red-500 text-center rounded-md px-5 text-lg font-Inter font-medium py-2 w-full hover:bg-gray-200" onclick="clearResult()">C</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-2 w-full hover:bg-gray-200">()</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-2 w-full hover:bg-gray-200" onclick="appendOperator('%')">%</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendOperator('/')">÷</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(7)">7</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(8)">8</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(9)">9</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full" onclick="appendOperator('*')">x</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(4)">4</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(5)">5</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(6)">6</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendOperator('-')">-</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(1)">1</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(2)">2</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(3)">3</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendOperator('+')">+</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200">+/-</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue(0)">0</button>
+                    <button
+                        class="bg-white text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="appendValue('.')">,</button>
+                    <button
+                        class="bg-green-500 text-center rounded-md px-5 text-lg font-Inter font-medium py-3 w-full hover:bg-gray-200" onclick="calculateResult()">=</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h2 class="text-center -mt-7 text-sm font-medium">Made with 💻 by <a href="https://github.com/alharyts" class="font-bold" target="__blank">Atyla A. Al Harits</a></h2>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
