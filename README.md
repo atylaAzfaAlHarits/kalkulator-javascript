@@ -1,2 +1,2 @@
 # kalkulator-javascript
-preview: 
+preview: https://atylaazfaalharits.github.io/kalkulator-javascript/
